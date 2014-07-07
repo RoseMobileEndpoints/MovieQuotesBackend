@@ -30,7 +30,7 @@ class MovieQuotesApi(remote.Service):
         """ Return all the quotes """
         return query
     
-    @MovieQuote.method(request_fields=("entityKey",), path="moviequote/delete",
+    @MovieQuote.method(request_fields=("entityKey",), path="moviequote/delete/{entityKey}",
                        http_method="DELETE", name="moviequote.delete")
     def moviequote_delete(self, request):
         """ Delete the given quote if present """
