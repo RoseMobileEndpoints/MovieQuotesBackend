@@ -1,4 +1,4 @@
-application: boutell-movie-quotes-3
+application: yourusername-movie-quotes # TODO: Update yourusername
 version: 1
 runtime: python27
 api_version: 1

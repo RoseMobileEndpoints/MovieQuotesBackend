@@ -11,7 +11,7 @@ from protorpc import remote
 from models import MovieQuote
 import main
 
-@endpoints.api(name="moviequotes", version="v1", description="Movie Quotes API", hostname="boutell-movie-quotes.appspot.com")
+@endpoints.api(name="moviequotes", version="v1", description="Movie Quotes API", hostname="yourusername-movie-quotes.appspot.com")
 class MovieQuotesApi(remote.Service):
 
     @MovieQuote.method(path="moviequote/insert", http_method="POST", name="moviequote.insert")
